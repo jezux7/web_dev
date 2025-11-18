@@ -1,37 +1,37 @@
+<!--JD Color theory-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Color</title>
         <meta charset="UTF">
-        <style>
-            div{
-                height: 150px;
-                width: 150px;
-                border: solid 3px black;
-            }
-            #complementary{
-                background-color: blue;
-                border-color: yellow;
-            }
-            #analogus{
-                background-color: blueviolet;
-                border-color: aquamarine;
-            }
-            #tridiac{
-                background-color: brown;
-                border-color: darkorange;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="complementary">
-            <p>Complementary</p>
-        </div>
-        <div id="analogus">
-            <p>Analogus</p>
-        </div>
-        <div id="tridiac">
-            <p>tridiac</p>
-        </div>
-    </body>
+  <style>
+     div{
+         height: 150px;
+        width: 150px;
+        border: solid 3px black;
+    }
+    .complementary {
+      background-color: #3498db; 
+      color: #e67e22;           
+      border-color: #e67e22;    
+    }
+    .analogous {
+      background-color: #2ecc71; 
+      color: #f1c40f;            
+      border-color: #27ae60;    
+    }
+    .triadic {
+      background-color: #e74c3c; 
+      color: #3498db;            
+      border-color: #f1c40f;     
+    }
+  </style>
+</head>
+<body>
+  <div class="box complementary">complementary</div>
+  <div class="box analogous">analogous</div>
+  <div class="box triadic">triadic</div>
+
+</body>
+
 </html>
