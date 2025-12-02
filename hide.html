@@ -1,0 +1,60 @@
+<!--JD Hide Image-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hidden Image</title>
+
+    <style>
+
+        #secret-img{
+            display: none;
+        }
+
+        #hidespot:hover + #secret-img{
+            display: block;
+        }
+
+        #vez {
+            width: 20%;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Venezuelan Foods </h1>
+
+    <p>
+        Venezuela is known for its vibrant culture and delicious food.
+        Many traditional dishes have regional influence and are enjoyed across
+        the country. This page shares some of the most popular foods and a bit of
+        personal perspective.
+    </p>
+
+    <p>
+        The list below includes some of the most iconic Venezuelan foods. Whether
+        you're familiar with these dishes or discovering them for the first time,
+        I hope this inspires you to explore the rich culinary traditions of Venezuela.
+    </p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/1280px-Flag_of_Venezuela.svg.png" 
+         alt="Venezuela Flag" id="vez">
+
+    <h2>Popular Venezuelan Foods</h2>
+
+    <ul>
+        <li>Empanadas</li>
+        <li>Tequeños</li>
+        <li>Patacones</li>
+    </ul>
+
+    <div id="hidespot">over here</div>
+
+    <img id="secret-img"
+         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92yhquvXuQNLG1YRtEBVez7d351_jscDytw&s"
+         alt="Hidden Venezuelan Food">
+
+</body>
+</html>
