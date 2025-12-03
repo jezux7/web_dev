@@ -1,0 +1,107 @@
+<!--JD final-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bryce Canyon</title>
+
+    <style>
+        body {
+            background-color: #e2dfdc;
+            font-family: "Courier New", Courier, monospace;
+            color: rgb(139, 83, 0);
+            margin: 0 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        img {
+            width: 50%;
+            display: block;
+            margin: 15px auto;
+            transition: 0.3s ease-in-out;
+        }
+
+        #extra-section {
+            display: none;
+            text-align: center;
+        }
+
+        button {
+            background-color: darkcyan;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 20px auto;
+            display: block;
+        }
+        button:hover {
+            background-color: #0f5f5f;
+        }
+    </style>
+
+    <script>
+        function toggleExtra() 
+        {
+            const section = document.getElementById("buttom-content");
+            const btn = document.getElementById("buttom");
+
+            if (section.style.display === "none") {
+                section.style.display = "block";
+                btn.textContent = "Hide Extra Content";
+            } else {
+                section.style.display = "none";
+                btn.textContent = "Show Extra Content";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Why u should go to Bryce Canyon</h1>
+
+    <p>bryce canow is..</p>
+
+    <ol>
+        <li>    
+            <h2>Reason #1</h2>
+            <p> 
+                
+            </p>
+        </li>
+
+        <li>
+            <h3>Reason #2</h3>
+            <p>
+                
+            </p>
+        </li>
+
+        <li>
+            <h4>Reason #3</h4>
+            <p>
+
+            </p>
+        </li>
+
+        <li>
+            <h5>Reason #4</h5>
+            <p>
+
+            </p>
+        </li>
+
+    </ol>
+
+    <button id="buttom" onclick="toggleExtra()">For More Info Click Here</button>
+
+    <div id="buttom-content">
+        <a href="https://www.nps.gov/brca/index.htm" target="_blank">Bryce Canyon National Park Service</a>
+        <p>"Utah is NOT borring"</p>
+    </div>
+
+</body>
+</html>
