@@ -4,47 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Bryce Canyon</title>
-
-    <style>
-        body {
-            background-color: #e2dfdc;
-            font-family: "Courier New", Courier, monospace;
-            color: rgb(139, 83, 0);
-            margin: 0 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-
-        img {
-            width: 30%;
-            display: block;
-            margin: 15px auto;
-            transition: 0.3s ease-in-out;
-        }
-
-        #extra-section {
-            display: none;
-            text-align: center;
-        }
-
-        button {
-            background-color: darkcyan;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
-            margin: 20px auto;
-            display: block;
-        }
-        button:hover {
-            background-color: #0f5f5f;
-        }
-    </style>
+    <link rel="stylesheet" href="estilosfinal.css">
 
     <script>
+        showing="none"
+        images[
+            "https://shakablog.s3.us-west-1.amazonaws.com/images/cef6ea58c159bd1d011a26f49bf72886.webp",
+            "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_675,q_75,w_1200/v1/clients/swat/TitleSlide_03eb7c9a-bac5-4fbe-a2a5-b85bb82a6349.jpg"
+        ]
+        index=0
         function toggleExtra() 
         {
             const section = document.getElementById("buttom-content");
@@ -58,7 +26,16 @@
                 btn.textContent = "For More Info Click Here";
             }
         }
+
+        function cambio(){
+            document.getElementById("cambio").src=images[index]
+            inderx+=1
+            if(index>=images.length){
+                index=0
+            }
+        }
     </script>
+
 </head>
 
 <body>
@@ -69,7 +46,8 @@
     <ol>
         <li>    
             <h2>Reason #1</h2>
-            <p> 
+            <p> It's a great place to take incredible photos,
+                definitely a place not to be missed for photography enthusiasts and professionals.
                 
             </p>
             <img src="https://alongcameanelephant.com/wp-content/uploads/2021/03/Bryce-Canyon-inspiration-point2-1-1500x900.jpg"
@@ -78,26 +56,46 @@
 
         <li>
             <h3>Reason #2</h3>
-            <p>
+            <p> If you are a fan of the movie Cars, or if your children are, going to Bryce Canyon is a dream come true,
+                as one of the famous scenes from Cars can be seen in real life at Bryce Canyon, as shown in the photos below.
                 
             </p>
-            <img src="https://i.pinimg.com/736x/09/d5/a6/09d5a61947158e9eee49b56e7b1fbbf1.jpg"
-             alt="bryce cars">
+            <div id="image-wrapper">
+                <img id="two" src="https://i.pinimg.com/736x/09/d5/a6/09d5a61947158e9eee49b56e7b1fbbf1.jpg"
+                alt="bryce cars real">
 
-             <img src="https://i.pinimg.com/736x/28/64/91/286491266533d5f87ba24e415cb17a89.jpg"
-             alt="bryce cars">
+                <img id="tres" src="https://i.pinimg.com/736x/28/64/91/286491266533d5f87ba24e415cb17a89.jpg"
+                alt="bryce cars">
+            </div>
         </li>
 
         <li>
             <h4>Reason #3</h4>
-            <p>
+            <p>The many hiking options available at Bryce Canyon, such as:
+
+                (Mossy Cave,
+                Rim Trail,
+                Bristlecone Loop,
+                Queens Garden,
+                Navajo Loop,
+                Tower Bridge,
+                Fairyland Loop,
+                Peekaboo Loop)
+
+                This place is very beautiful and offers many options for those who enjoy hiking.
 
             </p>
         </li>
 
         <li>
             <h5>Reason #4</h5>
-            <p>
+            <p> You can go at any time of the year and do activities such as skiing and winter hiking.
+            <div id="image-wrapper">
+
+                <img id="winter" src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_675,q_75,w_1200/v1/clients/swat/TitleSlide_03eb7c9a-bac5-4fbe-a2a5-b85bb82a6349.jpg" onmouseover="cambio()"
+                alt="bryce winter">
+
+            </div>
 
             </p>
         </li>
